@@ -1,0 +1,3 @@
+.env
+*.pyc
+bopp/bopp/__pycache__/

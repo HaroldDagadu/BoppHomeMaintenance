@@ -1,0 +1,260 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background: #d9e1d8;
+    color: #000000;
+    padding-top: 0%; /* Adjusted to account for increased navbar height */
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    height: 90px; /* Increased navbar height */
+    padding: 0 20px; /* Added padding for spacing elements */
+}
+
+/* Navbar Brand Styling */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    max-height: 90px; /* Ensures the image fits within the navbar */
+    height: auto;
+    width: 100px;
+    margin-left: -10%;
+}
+
+.navbar-brand img {
+    max-height: 90px; /* Ensures the image fits within the navbar */
+    height: auto;
+    width: 80px;
+    margin-left: 50%;
+}
+
+/* Navigation Links Styling */
+.navbar-nav > li > a {
+    padding-top: 30px; /* Adjust padding to move items down */
+    padding-bottom: 20px; /* Adjust padding to move items down */
+    margin-left: 500px; /* Space out the navbar items */
+    margin-right: 100px; /* Space out the navbar items */
+}
+
+/* Navbar Alignment */
+.navbar-nav {
+    margin-right: 10px;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    padding-top: 30px; /* Adjust padding to move items down */
+    padding-bottom: 20px; /* Adjust padding to move items down */
+    margin-left: 30px; /* Space out the dropdown items */
+    margin-right: 20px; /* Space out the dropdown items */
+    background-color: #3f3f3ff0; /* Match background color to navbar */
+
+}
+
+.dropdown-item {
+    color: rgb(249, 247, 247); /* White text for dropdown items */
+}
+
+/* Carousel Styling */
+
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for captions */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Background color for the collapsed menu */
+
+
+/* Remove background color when the menu is not collapsed (i.e., on larger screens) */
+.navbar-dark .navbar-collapse {
+    background-color: #343a40; /* Black background only when the menu is collapsed and expanded (e.g., on mobile) */
+    margin-left: 40%;
+
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background-color: #222; /* Black background for open dropdown menu */
+
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-color: #868686; /* Slightly darker background on hover */
+}
+
+/* Custom Navigation Links Styling */
+.custom-nav-link {
+    font-size: 1rem; /* Increase font size */
+    color: white !important; /* Ensure font color is white */
+}
+
+.custom-nav-link:hover {
+    color: #ddd !important; /* Lighter color on hover */
+}
+
+/* Full-Width Container with Background Image */
+.full-width-container {
+    width: 100%; /* Full width of the viewport */
+    background-image: url('../static/pics/jumbo.png'); /* Local background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    top: 12%;
+    position: absolute; 
+    height: 40%;
+    left: 0; /* Align to the left of the viewport */
+
+}
+
+/* Footer Styling */
+.footermain {
+    height: 8%;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+    background-color: #343a40; /* Dark background color for the footer */
+}
+
+/* Main Content Styling */
+.main {
+    top: 50%;
+    position: absolute;
+}
+.nav-links-wrapper {
+    background-color: #343a40; /* Dark background color */
+    padding: 10px 15px; /* Optional: Add some padding to space out the links */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* image hover */
+.hover-zoom {
+    overflow: hidden;
+    position: relative;
+}
+
+.hover-zoom img {
+    transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+.logodiv {
+background-image: url('../static/pics/bopplogo.jpg'); /* Local background image */
+background-size: cover; /* Cover the entire container */
+background-position: center; /* Center the background image */
+
+}
+.cardib {
+background-image: url('../static/pics/jumbo.png'); /* Local background image */
+background-size: cover; /* Cover the entire container */
+background-position: center; /* Center the background image */
+height:150px;
+}
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card-container .card {
+    flex: 1 1 calc(20% - 10px); /* Adjusts to 5 cards per row */
+    box-sizing: border-box;
+}
+
+
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+
+.suggestions-box {
+    position: absolute;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    max-height: 300px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion-item:hover {
+    background-color: #f1f1f1;
+}
+
+.suggestion-title {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.suggestion-details {
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 576px) {
+    .suggestions-box {
+        max-height: 200px;
+        font-size: 12px;
+    }
+
+    .suggestion-item {
+        padding: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

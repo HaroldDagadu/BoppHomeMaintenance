@@ -1,0 +1,348 @@
+//FONTS
+@import url("https://fonts.googleapis.com/css?family=Ek+Mukta:700|Muli:200,300,400");
+
+//VARIABLES
+$colorPrimary: rgb(251, 203, 8);
+$colorSecondary: #fff;
+$colorTertiary: #000;
+$ffPrimary: "Ek Mukta", sans-serif;
+$ffSecondary: "Muli", sans-serif;
+
+//GLOBAL
+html,
+body {
+	height: 100%;
+}
+figure {
+	margin: 0;
+}
+
+//TITLES
+h1,
+.h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+//BUTTONS
+.btn {
+	position: relative;
+	padding: 0 15px;
+	border-width: 2px;
+	height: 40px;
+	font-weight: 700;
+	font-family: $ffPrimary;
+	font-size: 16px;
+	line-height: 38px;
+	border-radius: 0;
+	-webkit-transition: ease-in-out 0.3s;
+	transition: ease-in-out 0.3s;
+	.fa {
+		display: inline-block;
+		position: absolute;
+		overflow: hidden;
+		right: 15px;
+		top: 50%;
+		width: 0;
+		vertical-align: top;
+		opacity: 0;
+		box-shadow: none;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-transition: ease-in-out 0.3s;
+		transition: ease-in-out 0.3s;
+	}
+}
+.btn-primary {
+	&,
+	&:link,
+	&:visited {
+		border-color: $colorPrimary;
+		background-color: $colorPrimary;
+		color: $colorTertiary;
+	}
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		padding-right: 40px;
+		border-color: $colorPrimary;
+		background-color: $colorPrimary;
+		color: $colorTertiary;
+		box-shadow: none;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			border-color: $colorPrimary;
+			background-color: $colorPrimary;
+			color: $colorTertiary;
+			box-shadow: none;
+		}
+		.fa {
+			width: 15px;
+			opacity: 1;
+		}
+	}
+}
+.btn-secondary {
+	border-radius: 7%;
+	&,
+	&:link,
+	&:visited {
+		border-color: rgba($color: #298404, $alpha: 1.0);
+		background-color: rgba($color: #298404, $alpha: 1.0);
+		color: $colorTertiary;
+	}
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		padding-right: 40px;
+		border-color: rgba($color: #92f56a, $alpha: 1.0);
+		background-color: rgba($color: #92f56a, $alpha: 1.0);
+		color: $colorTertiary;
+		box-shadow: none;
+		&:hover,
+		&:focus,
+		&:active,
+		&.active {
+			border-color: rgba($color: #92f56a, $alpha: 1.0);
+			background-color: rgba($color: #92f56a, $alpha: 1.0);
+			color: $colorTertiary;
+			box-shadow: none;
+		}
+		.fa {
+			width: 15px;
+			opacity: 1;
+		}
+	}
+}
+
+
+//JUMBOTRON
+/* .jumbotron {
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	height: inherit;
+	color: $colorSecondary;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba($colorTertiary, 0.75);
+	}
+	h1 {
+		font-size: inherit;
+	}
+	p {
+		margin-bottom: 0;
+	}
+} */
+
+//JUMBOTRON - Container
+/* .jumbonContainer {
+	position: absolute;
+	z-index: 10;
+	left: 60px;
+	right: 60px;
+	top: 50%;
+	padding: 30px 30px 30px 35px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+} */
+/* .containerContainerBefore {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: ;
+	bottom: 0;
+	width: 5px;
+	background-color: $colorPrimary;
+}
+.js .jumbotronContainerBefore {
+	width: 0;
+	opacity: 0;
+}
+.no-js .jumbotronContainerBefore {
+	width: 5px;
+	opacity: 1;
+} */
+
+//JUMBOTRON - Figure
+/* .containerFigure {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	img {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		max-width: 100%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+}
+.js .containerFigure {
+	opacity: 0;
+}
+.no-js .containerFigure {
+	opacity: 1;
+}
+@keyframes containerFigureVisible {
+	100% {
+		transform: scale(1.1);
+	}
+}
+.containerFigure.visible {
+	animation-duration: 30s;
+	animation-fill-mode: both;
+	animation-name: jumbotronFigureVisible;
+} */
+
+//JUMBOTRON - Header
+.containerHeader {
+	margin-bottom: 15px;
+}
+
+//JUMBOTRON - Category
+.containerCategory {
+	display: block;
+margin-top: 2.5%;
+	position: relative;
+	font-family: $ffSecondary;
+	font-size: 14px;
+	line-height: 20px;
+
+}
+.js .containerCategory {
+	left: -15px;
+	opacity: 0;
+}
+.no-js .containerCategory {
+	left: 0;
+	opacity: 1;
+}
+
+//JUMBOTRON - Title
+.containerTitle {
+	position: relative;
+	margin-top: 9px;
+	font-weight: 700;
+	font-family: $ffPrimary;
+	font-size: 50px;
+	line-height: 60px;
+	text-transform: uppercase;
+	color: rgb(1, 17, 7);
+}
+.js .conatinerTitle {
+	left: -15px;
+	opacity: 0;
+}
+.no-js .containerTitle {
+	left: 0;
+	opacity: 1;
+}
+
+//JUMBOTRON - Body
+.containerBody {
+	position: relative;
+	margin-bottom: 30px;
+	font-weight: 200;
+	font-family: $ffSecondary;
+	font-size: 20px;
+	line-height: 22px;
+	p {
+		font-weight: inherit;
+		font-size: inherit;
+	}
+}
+.js .containerBody {
+	left: -15px;
+	opacity: 0;
+}
+.no-js .containerBody {
+	left: 0;
+	opacity: 1;
+}
+
+//JUMBOTRON - Footer
+.containerFooter {}
+.js .jumbotronFooter {
+	opacity: 0;
+}
+.no-js .jumbotronFooter {
+	opacity: 1;
+}
+
+//RESPONSIVE
+@media (max-width: 991px) {}
+@media (max-width: 991px) and (orientation: portrait) {
+	
+
+	
+	//JUMBOTRON - Figure
+	.containerFigure {
+		img {
+			max-width: none;
+			max-height: 100%;
+		}
+	}
+
+}
+@media (max-width: 767px) {
+	
+	//BUTTONS
+	.btn {
+		height: 34px;
+		font-size: 14px;
+		line-height: 31px;
+	}
+
+	//JUMBOTRON
+
+	
+	//JUMBOTRON - Container
+	.containerContainer {
+		left: 30px;
+		right: 30px;
+		padding: 15px 15px 15px 20px;
+	}
+	
+	//JUMBOTRON - Header
+	.containerHeader {
+		margin-bottom: 5px;
+	}
+	
+	//JUMBOTRON - Category
+	.containerCategory {
+		font-size: px;
+		line-height: 18px ;
+	}
+	
+	//JUMBOTRON-Title
+	.jumbotronTitle,
+	.container h1 {
+		margin-top: 0;
+		font-size: 50px;
+		line-height: 40px;
+	}
+	
+	//JUMBOTRON-Body
+	.jumbotronBody {
+		margin-bottom: 20px;
+		font-size: 13px;
+		line-height: 19px;
+	}
+
+}
